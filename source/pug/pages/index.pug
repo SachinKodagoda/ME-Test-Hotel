@@ -1,0 +1,139 @@
+doctype html
+html(lang='en')
+  head
+    include ../globals/head.pug
+  body
+    .top_wrapper
+      .top_container
+        #header
+          .navbar
+            .logo
+              | Booking.lk
+            .nav
+              .nav_item.feature
+                a(href='#') features
+              .nav_item.press
+                a(href='#') press
+              .nav_item.download
+                a.download.button(href='#') Download
+            #nav_toggle
+              include ../custom_pugs/hamIcon/_ham_icon1
+        #article-booking
+          form.form_one(action="")
+            .f-topic
+              i.fa.fa-bed
+              lable Hotel Name
+            .f-body
+              .f-group
+                i.fa.fa-calendar-o
+                lable Check In
+                input.txt_input(type="text" placeholder="DD MM YYYY")
+              .f-group
+                i.fa.fa-calendar-o
+                lable Check Out
+                input.txt_input(type="text" placeholder="DD MM YYYY")
+              .f-group
+                i.fa.fa-male
+                lable Adults
+                input.txt_input(type="number" value="1" name="Adults" min="1" max="6")
+              .f-group
+                i.fa.fa-child
+                lable Kids
+                input.txt_input(type="number" value="0" name="Kids" min="0" max="6")
+              .f-search-btn
+                i.fa.fa-search
+                span Search Availability
+
+        #article-room
+          #a-roomONE
+            .a-container
+              .a-header
+                img(src="assets/img/img_1.jpg", alt="room_1")
+              .a-body
+                .a-body-topic Single Room
+                .a-body-desc From $99
+                .a-body-desc Single Bed
+                .a-body-desc 15m
+                  sup 2
+                .a-body-desc
+                  i.fa.fa-bath
+                  i.fa.fa-phone
+                  i.fa.fa-wifi
+                .a-select-btn Choose Room
+          #a-roomTWO
+            .a-container
+              .a-header
+                img(src="assets/img/img_2.jpg", alt="room_2")
+              .a-body
+                .a-body-topic Double Room
+                .a-body-desc From $149
+                .a-body-desc Queen-Size Bed
+                .a-body-desc 25m
+                  sup 2
+                .a-body-desc
+                  i.fa.fa-bath
+                  i.fa.fa-phone
+                  i.fa.fa-wifi
+                  i.fa.fa-tv
+                .a-select-btn Choose Room
+          #a-roomTHREE
+            .a-container
+              .a-header
+                img(src="assets/img/img_3.jpg", alt="room_3")
+              .a-body
+                .a-body-topic Deluxe Room
+                .a-body-desc From $199
+                .a-body-desc King-Size Bed
+                .a-body-desc 40m
+                  sup 2
+                .a-body-desc
+                  i.fa.fa-bath
+                  i.fa.fa-phone
+                  i.fa.fa-wifi
+                  i.fa.fa-tv
+                  i.fa.fa-glass
+                  i.fa.fa-cutlery
+                .a-select-btn Choose Room
+        #article-message
+          i.fa.fa-info.banner
+          | On demand, we can offer playstation, babycall, children care, dog equipment, etc.
+        #article-aboutUs
+          .a-container
+            .a-header About Us
+            .a-content
+              | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius facere et laudantium, minus optio tempore unde consequatur at iure soluta dicta qui aut quos, expedita deleniti? Alias corrupti unde error vero sit. Delectus voluptate ex nihil cumque vitae obcaecati doloribus illo fugiat amet qui perspiciatis aliquid eligendi, alias libero quae nam? Beatae perspiciatis eligendi voluptates accusamus similique culpa atque ipsa!
+              .a-content_cards We Accept:
+                i.fa.fa-credit-card
+                i.fa.fa-cc-mastercard
+                i.fa.fa-cc-visa
+                i.fa.fa-cc-paypal
+          .a-location
+            img(src="assets/img/img_4.jpg", alt="location")
+            .a-location_address
+              i.fa.fa-map-marker
+              | No:xx , Some adr , Province , Country
+            .a-location_address
+              i.fa.fa-phone
+              | Phone: +94 123456789
+            .a-location_address
+              i.fa.fa-envelope
+              | Email: mail@mail.com
+        #article-hotels
+          .a-hotelONE
+            | fgfg
+            //- img(src="assets/img/img_5.jpg", alt="location")
+
+        #footer
+          .footer-header Contact Us : Social Meadia
+          .footer-socialMedia
+            .icon.icon-facebook
+              img(src="assets/img/icon-facebook.svg", alt="facebook_icon")
+            .icon.icon-instagram
+              img(src="assets/img/icon-instagram.svg", alt="instagram")
+            .icon.icon-snapchat
+              img(src="assets/img/icon-google_plus.svg", alt="snapchat")
+            .icon.icon-pinterset
+              img(src="assets/img/icon-youtube.svg", alt="pinterset")
+          .footer-bottom © 2018 All rights reserved.
+    script(src='./assets/js/vendors.js')
+    script(src='./assets/js/app.js')

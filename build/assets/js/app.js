@@ -1,0 +1,1 @@
+var navButton=document.getElementById("nav_toggle"),left_menu=document.getElementById("left_menu"),ham=document.getElementsByClassName("ham");function toggle_nav(e){var t;for(t=0;t<ham.length;t++)ham[t].classList.toggle("cross")}
