@@ -324,7 +324,7 @@ p {
     display: flex;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    background: #D32F2F;
+    background: #FF4136;
     position: relative; }
     #header .navbar .logo {
       width: 100%;
@@ -426,10 +426,8 @@ p {
 #article-booking {
   height: auto;
   width: 100%;
-  padding: 10px 20px;
+  padding: 20px;
   background-image: url("../img/img_0.jpg");
-  background-color: #cccccc;
-  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -438,9 +436,9 @@ p {
     background: #FFF;
     padding: 0 0 20px 0; }
     #article-booking .form_one .f-topic {
-      height: 60px;
-      line-height: 60px;
-      background: #FF4136;
+      height: 46px;
+      line-height: 46px;
+      background: #D32F2F;
       font-weight: 400;
       font-size: 30px;
       color: #FFF;
@@ -533,12 +531,80 @@ p {
         color: #f44336; }
 
 #article-hotels {
-  background: #000;
+  height: auto;
   padding: 20px; }
   #article-hotels .a-hotelONE {
-    padding: 20px;
-    height: 60px;
-    background: red; }
+    height: auto;
+    position: relative; }
+    #article-hotels .a-hotelONE img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto 0 auto; }
+    #article-hotels .a-hotelONE .a-cityName {
+      position: absolute;
+      width: 180px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 20px;
+      text-align: left;
+      padding-left: 10px;
+      left: 0;
+      bottom: 0;
+      color: #fff; }
+
+#article-subscribe {
+  height: auto;
+  background: #606060;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px; }
+  #article-subscribe .a-container .a-content .form_two {
+    height: auto; }
+    #article-subscribe .a-container .a-content .form_two .f-group {
+      width: 100%;
+      margin-bottom: 16px; }
+      #article-subscribe .a-container .a-content .form_two .f-group .txt_input {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 8px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        background-color: white; }
+  #article-subscribe .a-container .a-subscribe-btn {
+    background: #f44336;
+    height: 40px;
+    color: #fff;
+    width: 150px;
+    line-height: 40px;
+    text-align: center; }
+
+#article-contact {
+  height: auto;
+  padding: 20px;
+  color: #000;
+  font-size: 20px; }
+  #article-contact .a-container .a-content .form_two {
+    height: auto; }
+    #article-contact .a-container .a-content .form_two .f-group {
+      width: 100%;
+      margin-bottom: 16px; }
+      #article-contact .a-container .a-content .form_two .f-group .txt_input {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 8px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        background-color: white; }
+  #article-contact .a-container .a-send-btn {
+    background: #000;
+    height: 40px;
+    color: #fff;
+    width: 200px;
+    line-height: 40px;
+    text-align: center; }
 
 #footer {
   height: auto;

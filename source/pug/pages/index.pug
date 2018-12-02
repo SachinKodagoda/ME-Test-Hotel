@@ -94,9 +94,11 @@ html(lang='en')
                   i.fa.fa-glass
                   i.fa.fa-cutlery
                 .a-select-btn Choose Room
+
         #article-message
           i.fa.fa-info.banner
           | On demand, we can offer playstation, babycall, children care, dog equipment, etc.
+
         #article-aboutUs
           .a-container
             .a-header About Us
@@ -118,13 +120,49 @@ html(lang='en')
             .a-location_address
               i.fa.fa-envelope
               | Email: mail@mail.com
+
         #article-hotels
           .a-hotelONE
-            | fgfg
-            //- img(src="assets/img/img_5.jpg", alt="location")
+            img(src="assets/img/img_5.jpg", alt="location")
+            .a-cityName Cinque Terre
+          .a-hotelONE
+            img(src="assets/img/img_6.jpg", alt="location")
+            .a-cityName New York
+          .a-hotelONE
+            img(src="assets/img/img_7.jpg", alt="location")
+            .a-cityName San Francisco
+          .a-hotelONE
+            img(src="assets/img/img_8.jpg", alt="location")
+            .a-cityName Pisa
+          .a-hotelONE
+            img(src="assets/img/img_9.jpg", alt="location")
+            .a-cityName Paris
+
+        #article-subscribe
+          .a-container
+            .a-header Get the best offers first!
+            .a-content
+              form.form_two
+                .f-group
+                  lable Email
+                  input.txt_input(type="text" placeholder="Your Email Address")
+            .a-subscribe-btn Subscribe
+        #article-contact
+            .a-container
+              .a-header Contact
+              .a-content
+                | If you have any questions, do not hesitate to ask them.
+                form.form_two
+                  .f-group
+                    input.txt_input(type="text" placeholder="Name")
+                  .f-group
+                    input.txt_input(type="Email" placeholder="Email")
+                  .f-group
+                    input.txt_input(type="text" placeholder="Message")
+              .a-send-btn Send Message
 
         #footer
-          .footer-header Contact Us : Social Meadia
+          .footer-header Find Us On
           .footer-socialMedia
             .icon.icon-facebook
               img(src="assets/img/icon-facebook.svg", alt="facebook_icon")
