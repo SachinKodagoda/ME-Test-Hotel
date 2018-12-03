@@ -10,16 +10,16 @@ html(lang='en')
             .logo
               | Booking.lk
             .nav
-              .nav_item.feature
-                a(href='#') features
-              .nav_item.press
-                a(href='#') press
-              .nav_item.download
-                a.download.button(href='#') Download
+              //- .nav_item.feature
+              //-   a(href='#') features
+              //- .nav_item.press
+              //-   a(href='#') press
+              //- .nav_item.download
+              //-   a.download.button(href='#') Download
             #nav_toggle
               include ../custom_pugs/hamIcon/_ham_icon1
-        #article-booking
-          form.form_one(action="")
+        #article-booking.row
+          form.form_one.col.s12.m6.l4(action="")
             .f-topic
               i.fa.fa-bed
               lable Hotel Name
@@ -44,8 +44,8 @@ html(lang='en')
                 i.fa.fa-search
                 span Search Availability
 
-        #article-room
-          #a-roomONE
+        #article-room.row
+          #a-roomONE.col.s12.m4
             .a-container
               .a-header
                 img(src="assets/img/img_1.jpg", alt="room_1")
@@ -60,7 +60,7 @@ html(lang='en')
                   i.fa.fa-phone
                   i.fa.fa-wifi
                 .a-select-btn Choose Room
-          #a-roomTWO
+          #a-roomTWO.col.s12.m4
             .a-container
               .a-header
                 img(src="assets/img/img_2.jpg", alt="room_2")
@@ -76,7 +76,7 @@ html(lang='en')
                   i.fa.fa-wifi
                   i.fa.fa-tv
                 .a-select-btn Choose Room
-          #a-roomTHREE
+          #a-roomTHREE.col.s12.m4
             .a-container
               .a-header
                 img(src="assets/img/img_3.jpg", alt="room_3")

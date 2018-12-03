@@ -3,18 +3,18 @@
     height: 14px
     width: 24px
     cursor: pointer
-    @include tap_highlight_issue
-    @include perfect_center
+    +tap_highlight_issue
+    +perfect_center
 
 #ham_top
-    @include ham_icon
+    +ham_icon
     top: 0
     transition: .25s ease-in-out
     &.cross
         transform: rotate(135deg) scaleX(1) translateY(-8px)
 
 #ham_mid
-    @include ham_icon
+    +ham_icon
     top: calc(50% - 1px)
     transform: rotate(0deg)
     transition: .25s ease-in-out;
@@ -24,7 +24,7 @@
         // transform: scaleX(0)
 
 #ham_bot
-    @include ham_icon
+    +ham_icon
     bottom:  0
     transition: .25s ease-in-out;
     &.cross
