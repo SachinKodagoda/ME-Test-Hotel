@@ -1,26 +1,51 @@
 .article-hotels
     height: auto
-    // padding: 20px
+    +OVER_SMALL
+        padding: 14px 14px
     .a-hotelONE-cover
-        background: red
         height: auto
-        // overflow: hidden
-    .a-hotelONE
-        height: auto
-        // position: relative
-    img
-        width: 100%
-        height: auto
-        display: block
-        // margin: 20px auto 0 auto
-    .a-cityName
-        position: absolute
-        width: 180px
-        height: 30px
-        line-height: 30px
-        font-size: 20px
-        text-align: left
-        padding-left: 10px
-        left: 0
-        bottom: 0
-        color: #fff
+        +OVER_SMALL
+            padding: 6px
+            &:first-child
+                padding-right: 0
+        .row
+            .padding_right
+                padding-right: 0
+                +OVER_SMALL
+                    padding-right: 3px
+            .padding_left
+                padding-left: 0
+                +OVER_SMALL
+                    padding-left: 3px
+            .padding_top
+                padding-top: 0
+                +OVER_SMALL
+                    padding-top: 3px
+            .padding_bottom
+                padding-bottom: 0
+                +OVER_SMALL
+                    padding-bottom: 3px
+
+            .a-hotelONE
+                height: auto
+                position: relative
+                img
+                    width: 100%
+                    height: auto
+                    display: block
+                    margin-top: 20px
+                    +OVER_SMALL
+                        margin-top: 0
+                .a-cityName
+                    position: absolute
+                    width: 180px
+                    height: 30px
+                    line-height: 30px
+                    font-size: 20px
+                    text-align: left
+                    padding-left: 10px
+                    left: 0
+                    bottom: 0
+                    color: #fff
+
+

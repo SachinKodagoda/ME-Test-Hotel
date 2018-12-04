@@ -236,9 +236,6 @@ hr {
   border-top: 1px solid #eee;
   margin: 20px 0; }
 
-img {
-  margin-bottom: -5px; }
-
 a {
   color: inherit;
   text-decoration: none; }
@@ -716,26 +713,58 @@ p {
 
 .article-hotels {
   height: auto; }
+  @media only screen and (min-width: 600px) {
+    .article-hotels {
+      padding: 14px 14px; } }
   .article-hotels .a-hotelONE-cover {
-    background: red;
     height: auto; }
-  .article-hotels .a-hotelONE {
-    height: auto; }
-  .article-hotels img {
-    width: 100%;
-    height: auto;
-    display: block; }
-  .article-hotels .a-cityName {
-    position: absolute;
-    width: 180px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 20px;
-    text-align: left;
-    padding-left: 10px;
-    left: 0;
-    bottom: 0;
-    color: #fff; }
+    @media only screen and (min-width: 600px) {
+      .article-hotels .a-hotelONE-cover {
+        padding: 6px; }
+        .article-hotels .a-hotelONE-cover:first-child {
+          padding-right: 0; } }
+    .article-hotels .a-hotelONE-cover .row .padding_right {
+      padding-right: 0; }
+      @media only screen and (min-width: 600px) {
+        .article-hotels .a-hotelONE-cover .row .padding_right {
+          padding-right: 3px; } }
+    .article-hotels .a-hotelONE-cover .row .padding_left {
+      padding-left: 0; }
+      @media only screen and (min-width: 600px) {
+        .article-hotels .a-hotelONE-cover .row .padding_left {
+          padding-left: 3px; } }
+    .article-hotels .a-hotelONE-cover .row .padding_top {
+      padding-top: 0; }
+      @media only screen and (min-width: 600px) {
+        .article-hotels .a-hotelONE-cover .row .padding_top {
+          padding-top: 3px; } }
+    .article-hotels .a-hotelONE-cover .row .padding_bottom {
+      padding-bottom: 0; }
+      @media only screen and (min-width: 600px) {
+        .article-hotels .a-hotelONE-cover .row .padding_bottom {
+          padding-bottom: 3px; } }
+    .article-hotels .a-hotelONE-cover .row .a-hotelONE {
+      height: auto;
+      position: relative; }
+      .article-hotels .a-hotelONE-cover .row .a-hotelONE img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 20px; }
+        @media only screen and (min-width: 600px) {
+          .article-hotels .a-hotelONE-cover .row .a-hotelONE img {
+            margin-top: 0; } }
+      .article-hotels .a-hotelONE-cover .row .a-hotelONE .a-cityName {
+        position: absolute;
+        width: 180px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+        text-align: left;
+        padding-left: 10px;
+        left: 0;
+        bottom: 0;
+        color: #fff; }
 
 #article-subscribe {
   height: auto;
