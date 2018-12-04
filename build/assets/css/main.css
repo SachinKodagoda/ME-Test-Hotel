@@ -236,6 +236,9 @@ hr {
   border-top: 1px solid #eee;
   margin: 20px 0; }
 
+img {
+  margin-bottom: -5px; }
+
 a {
   color: inherit;
   text-decoration: none; }
@@ -282,7 +285,6 @@ p {
 
 .top_wrapper {
   overflow-x: hidden;
-  overflow-y: scroll;
   width: 100%;
   height: 100%; }
 
@@ -712,28 +714,28 @@ p {
       #article-aboutUs .a-location .a-location_address .fa {
         color: #f44336; }
 
-#article-hotels {
-  height: auto;
-  padding: 20px; }
-  #article-hotels .a-hotelONE {
+.article-hotels {
+  height: auto; }
+  .article-hotels .a-hotelONE-cover {
+    background: red;
+    height: auto; }
+  .article-hotels .a-hotelONE {
+    height: auto; }
+  .article-hotels img {
+    width: 100%;
     height: auto;
-    position: relative; }
-    #article-hotels .a-hotelONE img {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: 20px auto 0 auto; }
-    #article-hotels .a-hotelONE .a-cityName {
-      position: absolute;
-      width: 180px;
-      height: 30px;
-      line-height: 30px;
-      font-size: 20px;
-      text-align: left;
-      padding-left: 10px;
-      left: 0;
-      bottom: 0;
-      color: #fff; }
+    display: block; }
+  .article-hotels .a-cityName {
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+    left: 0;
+    bottom: 0;
+    color: #fff; }
 
 #article-subscribe {
   height: auto;
