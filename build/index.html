@@ -7,57 +7,29 @@
     <meta name="author" content="Sachin Kodagoda">
     <meta name="keywords" content="Hotel, Booking">
     <meta name="description" content="booking hotels">
-    <meta name="theme-color" content="white">
+    <meta name="theme-color" content="black">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" sizes="16x16">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
     <div class="top_wrapper">
       <div class="top_container">
-        <div id="header">
-          <div class="navbar">
-            <div class="logo">Booking.lk</div>
-            <div class="nav"></div>
-            <div id="nav_toggle">
-              <div class="ham_cover">
-                <div class="ham" id="ham_top"></div>
-                <div class="ham" id="ham_mid"></div>
-                <div class="ham" id="ham_bot"></div>
-              </div>
-            </div>
+        <div class="article-booking row">
+          <div class="fullscreen-bg">
+            <video class="fullscreen_video" loop="loop" muted="muted" autoplay="true">
+              <source src="assets/video/hotel.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="logo">
+            <div class="cover">Wizards<br>of<br>Digital Arts</div>
           </div>
         </div>
-        <div class="row" id="article-booking">
-          <form class="form_one col s12 m6 l4" action="">
-            <div class="f-topic"><i class="fa fa-bed"></i>
-              <lable>Hotel Name</lable>
-            </div>
-            <div class="f-body">
-              <div class="f-group"><i class="fa fa-calendar-o"></i>
-                <lable>Check In</lable>
-                <input class="txt_input" type="text" placeholder="DD MM YYYY">
-              </div>
-              <div class="f-group"><i class="fa fa-calendar-o"></i>
-                <lable>Check Out</lable>
-                <input class="txt_input" type="text" placeholder="DD MM YYYY">
-              </div>
-              <div class="f-group"><i class="fa fa-male"></i>
-                <lable>Adults</lable>
-                <input class="txt_input" type="number" value="1" name="Adults" min="1" max="6">
-              </div>
-              <div class="f-group"><i class="fa fa-child"></i>
-                <lable>Kids</lable>
-                <input class="txt_input" type="number" value="0" name="Kids" min="0" max="6">
-              </div>
-              <div class="f-search-btn"><i class="fa fa-search"></i><span>Search Availability</span></div>
-            </div>
-          </form>
-        </div>
-        <div class="row" id="article-room">
-          <div class="col s12 m4" id="a-roomONE">
+        <div class="article-room row">
+          <div class="a-roomONE col s12 m4">
             <div class="a-container">
               <div class="a-header"><img src="assets/img/img_1.jpg" alt="room_1"></div>
               <div class="a-body">
@@ -70,7 +42,7 @@
               </div>
             </div>
           </div>
-          <div class="col s12 m4" id="a-roomTWO">
+          <div class="a-roomTWO col s12 m4">
             <div class="a-container">
               <div class="a-header"><img src="assets/img/img_2.jpg" alt="room_2"></div>
               <div class="a-body">
@@ -83,7 +55,7 @@
               </div>
             </div>
           </div>
-          <div class="col s12 m4" id="a-roomTHREE">
+          <div class="a-roomTHREE col s12 m4">
             <div class="a-container">
               <div class="a-header"><img src="assets/img/img_3.jpg" alt="room_3"></div>
               <div class="a-body">
@@ -185,7 +157,6 @@
         </div>
       </div>
     </div>
-    <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
