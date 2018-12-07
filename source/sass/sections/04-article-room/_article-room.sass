@@ -1,7 +1,9 @@
-#article-room
-    #a-roomONE, #a-roomTWO, #a-roomTHREE
+.article-room
+    .a-roomONE, .a-roomTWO, .a-roomTHREE
         height: auto
-        padding: 20px 20px
+        padding: 4px
+        +OVER_SMALL
+            padding: 16px
         .a-container
             width: 100%
             height: auto
@@ -11,7 +13,9 @@
                 width: 100%
                 height: auto
         .a-body
-            padding: 20px
+            padding: 4px
+            +OVER_SMALL
+                padding: 16px
             .a-body-topic
                 +font_sub_topic
                 text-align: center

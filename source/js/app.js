@@ -13,3 +13,12 @@ function toggle_nav(event) {
 // navButton.addEventListener("click", toggle_nav);
 
 // left_menu.addEventListener("click", toggle_nav);
+
+
+$(function(){
+
+    setTimeout( function(){
+        $(".logo").addClass("animate");
+    }  , 1000 );
+
+});

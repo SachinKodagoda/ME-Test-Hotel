@@ -5,47 +5,19 @@ html(lang='en')
   body
     .top_wrapper
       .top_container
-        #header
-          .navbar
-            .logo
-              | Booking.lk
-            .nav
-              //- .nav_item.feature
-              //-   a(href='#') features
-              //- .nav_item.press
-              //-   a(href='#') press
-              //- .nav_item.download
-              //-   a.download.button(href='#') Download
-            #nav_toggle
-              include ../custom_pugs/hamIcon/_ham_icon1
-        #article-booking.row
-          form.form_one.col.s12.m6.l4(action="")
-            .f-topic
-              i.fa.fa-bed
-              lable Hotel Name
-            .f-body
-              .f-group
-                i.fa.fa-calendar-o
-                lable Check In
-                input.txt_input(type="text" placeholder="DD MM YYYY")
-              .f-group
-                i.fa.fa-calendar-o
-                lable Check Out
-                input.txt_input(type="text" placeholder="DD MM YYYY")
-              .f-group
-                i.fa.fa-male
-                lable Adults
-                input.txt_input(type="number" value="1" name="Adults" min="1" max="6")
-              .f-group
-                i.fa.fa-child
-                lable Kids
-                input.txt_input(type="number" value="0" name="Kids" min="0" max="6")
-              .f-search-btn
-                i.fa.fa-search
-                span Search Availability
-
-        #article-room.row
-          #a-roomONE.col.s12.m4
+        .article-booking.row
+          .fullscreen-bg
+            video.fullscreen_video(loop='loop', muted='muted', autoplay='true')
+              source(src='assets/video/hotel.mp4', type='video/mp4')
+          .logo
+            .cover
+              | Wizards
+              br
+              | of
+              br
+              |Digital Arts
+        .article-room.row
+          .a-roomONE.col.s12.m4
             .a-container
               .a-header
                 img(src="assets/img/img_1.jpg", alt="room_1")
@@ -60,7 +32,7 @@ html(lang='en')
                   i.fa.fa-phone
                   i.fa.fa-wifi
                 .a-select-btn Choose Room
-          #a-roomTWO.col.s12.m4
+          .a-roomTWO.col.s12.m4
             .a-container
               .a-header
                 img(src="assets/img/img_2.jpg", alt="room_2")
@@ -76,7 +48,7 @@ html(lang='en')
                   i.fa.fa-wifi
                   i.fa.fa-tv
                 .a-select-btn Choose Room
-          #a-roomTHREE.col.s12.m4
+          .a-roomTHREE.col.s12.m4
             .a-container
               .a-header
                 img(src="assets/img/img_3.jpg", alt="room_3")
@@ -179,5 +151,4 @@ html(lang='en')
             .icon.icon-pinterset
               img(src="assets/img/icon-youtube.svg", alt="pinterset")
           .footer-bottom © 2018 All rights reserved.
-    script(src='./assets/js/vendors.js')
     script(src='./assets/js/app.js')
