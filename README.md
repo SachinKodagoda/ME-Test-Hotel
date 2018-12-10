@@ -42,3 +42,73 @@ Cheers 👍🏼
 |    └──**css** <br/>
 |----*index.html*
 
+
+
+
+
+## OOCSS (Object/Module Oriented CSS)
+* Identify the Objects or the Modules
+    >   .a
+        .a_header
+        .a_content
+        .a_footer
+
+    >
+
+
+## BEM Method(Block Element Modifier Method)
+* Don't Use id for styling
+    eg: #a_header
+* Don't use CSS Chaining
+    .a .a_header
+    .a > .a_header
+* Can use Multiple classes
+    .a.a_header
+    (Use &)
+* Can use grouping
+    a_header, a_footer
+    (Use @extend)
+
+* Block
+* Block--modifier
+* Block__element
+* Block__element--modifier
+* Block__element__subelement
+* Block__element__subelement--modifier
+
+.btn
+.btn--state-success
+.btn--state-danger
+
+
+
+## SMACSS(Scalable Modular Architechture for css)
+* Base => no id/classes, all applies to html
+* Layout => big page sections 
+    eg: .header, .sidebar etc
+* Modules => reusable,encapsulated modules
+* State => overrides defaults
+    eg: .is-opened
+* Theme => optional, if theme needed
+
+
+## CSS naming
+* No capital names
+* css prefixed classes
+    eg: .article module as .a
+
+## My Structure (SMACSS)
+* Globals
+    _01-variables
+    _02-functions
+    _03-mixins
+    _04-normalize
+    _05-base
+    _06-common
+    _07-responsive
+* Sections
+    01-menu
+    02-header
+    03-article
+    04-footer
+* main.sass

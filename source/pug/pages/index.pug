@@ -17,128 +17,129 @@ html(lang='en')
               | of
               br
               |Digital Arts
-        .article-room.row
-          .a-roomONE.col.s12.m4
-            .a-container
-              .a-header
-                img(src="assets/img/img_1.jpg", alt="room_1")
-              .a-body
-                .a-body-topic Single Room
-                .a-body-desc From $99
-                .a-body-desc Single Bed
-                .a-body-desc 15m
+        .a-room.row
+          .a-room--one.col.s12.m4
+            .room-container
+              .room-header
+                img.room-header_img(src="assets/img/img_1.jpg", alt="room_1")
+              .room-body
+                .room-body_topic Single Room
+                .room-body_desc From $99
+                .room-body_desc Single Bed
+                .room-body_desc 15m
                   sup 2
-                .a-body-desc
+                .room-body_desc
                   i.fa.fa-bath
                   i.fa.fa-phone
                   i.fa.fa-wifi
-                .a-select-btn Choose Room
-          .a-roomTWO.col.s12.m4
-            .a-container
-              .a-header
-                img(src="assets/img/img_2.jpg", alt="room_2")
-              .a-body
-                .a-body-topic Double Room
-                .a-body-desc From $149
-                .a-body-desc Queen-Size Bed
-                .a-body-desc 25m
+                .room-body_btn Choose Room
+          .a-room--two.col.s12.m4
+            .room-container
+              .room-header
+                img.room-header_img(src="assets/img/img_2.jpg", alt="room_2")
+              .room-body
+                .room-body_topic Double Room
+                .room-body_desc From $149
+                .room-body_desc Queen-Size Bed
+                .room-body_desc 25m
                   sup 2
-                .a-body-desc
+                .room-body_desc
                   i.fa.fa-bath
                   i.fa.fa-phone
                   i.fa.fa-wifi
                   i.fa.fa-tv
-                .a-select-btn Choose Room
-          .a-roomTHREE.col.s12.m4
-            .a-container
-              .a-header
-                img(src="assets/img/img_3.jpg", alt="room_3")
-              .a-body
-                .a-body-topic Deluxe Room
-                .a-body-desc From $199
-                .a-body-desc King-Size Bed
-                .a-body-desc 40m
+                .room-body_btn Choose Room
+          .a-room--three.col.s12.m4
+            .room-container
+              .room-header
+                img.room-header_img(src="assets/img/img_3.jpg", alt="room_3")
+              .room-body
+                .room-body_topic Deluxe Room
+                .room-body_desc From $199
+                .room-body_desc King-Size Bed
+                .room-body_desc 40m
                   sup 2
-                .a-body-desc
+                .room-body_desc
                   i.fa.fa-bath
                   i.fa.fa-phone
                   i.fa.fa-wifi
                   i.fa.fa-tv
                   i.fa.fa-glass
                   i.fa.fa-cutlery
-                .a-select-btn Choose Room
+                .room-body_btn Choose Room
 
-        #article-message
-          i.fa.fa-info.banner
+        .a-message
+          i.fa.fa-info.message_banner
           | On demand, we can offer playstation, babycall, children care, dog equipment, etc.
 
-        #article-aboutUs
-          .a-container
-            .a-header About Us
-            .a-content
+        .a-about
+          .about-container
+            .about-header About Us
+            .about-body
               | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius facere et laudantium, minus optio tempore unde consequatur at iure soluta dicta qui aut quos, expedita deleniti? Alias corrupti unde error vero sit. Delectus voluptate ex nihil cumque vitae obcaecati doloribus illo fugiat amet qui perspiciatis aliquid eligendi, alias libero quae nam? Beatae perspiciatis eligendi voluptates accusamus similique culpa atque ipsa!
-              .a-content_cards We Accept:
+              .about-body_cards We Accept:
                 i.fa.fa-credit-card
                 i.fa.fa-cc-mastercard
                 i.fa.fa-cc-visa
                 i.fa.fa-cc-paypal
-          .a-location
-            //- img(src="assets/img/img_4.jpg", alt="location")
-            .a-location_address
+        .a-location
+          .location-body
+            .location-body_address
               i.fa.fa-map-marker
               | No:xx , Some adr , Province , Country
-            .a-location_address
+            .location-body_address
               i.fa.fa-phone
               | Phone: +94 123456789
-            .a-location_address
+            .location-body_address
               i.fa.fa-envelope
               | Email: mail@mail.com
 
-        .article-hotels.row
-          .a-hotelONE-cover.col.s12.m6
+        .a-hotel.row
+          .col.s12.m6
             .row
-              .a-hotelONE.col.s12.m12
-                img(src="assets/img/img_5.jpg", alt="location")
-                .a-cityName Cinque Terre
-          .a-hotelONE-cover.col.s12.m6
+              .col.s12
+                .hotel-body
+                  img.hotel-body_img(src="assets/img/img_5.jpg", alt="location")
+                  .hotel-body_desc Cinque Terre
+          .col.s12.m6
             .row
               .row
-                .a-hotelONE.col.s12.m6
-                  img(src="assets/img/img_6.jpg", alt="location")
-                  .a-cityName New York
-                .a-hotelONE.col.s12.m6
-                  img(src="assets/img/img_7.jpg", alt="location")
-                  .a-cityName San Francisco
+                .hotel-body.col.s12.m6
+                  img.hotel-body_img(src="assets/img/img_6.jpg", alt="location")
+                  .hotel-body_desc New York
+                .hotel-body.col.s12.m6
+                  img.hotel-body_img(src="assets/img/img_7.jpg", alt="location")
+                  .hotel-body_desc  San Francisco
               .row
-                .a-hotelONE.col.s12.m6
-                  img(src="assets/img/img_8.jpg", alt="location")
-                  .a-cityName Pisa
-                .a-hotelONE.col.s12.m6
-                  img(src="assets/img/img_9.jpg", alt="location")
-                  .a-cityName Paris
+                .hotel-body.col.s12.m6
+                  img.hotel-body_img(src="assets/img/img_8.jpg", alt="location")
+                  .hotel-body_desc Pisa
+                .hotel-body.col.s12.m6
+                  img.hotel-body_img(src="assets/img/img_9.jpg", alt="location")
+                  .hotel-body_desc Paris
 
-        #article-subscribe
-          .a-container
-            .a-header Get the best offers first!
-            .a-content
-              form.form_two
-                .f-group
-                  lable Email
-                  input.txt_input(type="text" placeholder="Your Email Address")
-            .a-subscribe-btn Subscribe
-        #article-contact
-            .a-container
-              .a-header Contact
-              .a-content
+        .a-subscribe
+          .subscribe-container
+            .subscribe-head Get the best offers first!
+            form.subscribe-form
+              .subscribe-form_group
+                lable Email
+                input.subscribe-form_group_input(type="text" placeholder="Your Email Address")
+            .subscribe-btn Subscribe
+
+        .a-contact
+            .contact-container
+              .contact-head Contact
+              .contact-body
                 | If you have any questions, do not hesitate to ask them.
-                form.form_two
-                  .f-group
-                    input.txt_input(type="text" placeholder="Name")
-                  .f-group
-                    input.txt_input(type="Email" placeholder="Email")
-                  .f-group
-                    input.txt_input(type="text" placeholder="Message")
-              .a-send-btn Send Message
+                form.contact-form
+                  .contact-form_group
+                    input.contact-form_group_input(type="text" placeholder="Name")
+                  .contact-form_group
+                    input.contact-form_group_input(type="Email" placeholder="Email")
+                  .contact-form_group
+                    input.contact-form_group_input(type="text" placeholder="Message")
+              .contact-btn Send Message
 
         #footer
           .footer-header Find Us On

@@ -5,21 +5,18 @@
     display: table
     clear: both
 
-.col,.rest
+.col , .col-pad
   float: left
   width: 100%
   height: auto
 
+.col-pad
+  padding: 0 8px
+
 =sizes($size)
   @for $i from 1 through 12
-    .col
-      &.#{$size}#{$i}
-        width: (100/12 * $i)#{%}
-      &.#{$size}#{$i}+.rest
-        @if $i==12
-          width: 100%
-        @else
-          width: (100 - 100/12 * $i)#{%}
+    .#{$size}#{$i}
+      width: (100/12 * $i)#{%}
 
 +sizes(s)
 @media (min-width:601px)

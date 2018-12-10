@@ -1,0 +1,43 @@
+.a-room
+    padding: 2px
+    +OVER_LARGE
+        padding: 8px
+        margin: 12px 0
+    &--one, &--two, &--three
+        padding: 2px
+        +OVER_LARGE
+            padding: 8px
+
+.room-container
+    width: 100%
+    height: auto
+    border: 1px solid #ccc
+
+.room-header
+    &_img
+        width: 100%
+        height: auto
+
+.room-body
+    padding: 0
+    +OVER_LARGE
+        padding: 16px
+
+    &_topic
+        +font_sub_topic
+        text-align: center
+
+    &_desc
+        +font_desc
+        text-align: center
+
+    &_btn
+        @extend .btn
+        width: 100%
+        background: #000
+        color: #FFF
+        text-align: center
+        height: 40px
+        line-height: 40px
+
+
