@@ -31,18 +31,28 @@
     border-right: 1px solid #ffffff
     border-left: 1px solid #ffffff
     overflow: hidden
-    transition: all 1s ease-out
+    transition: all 1s
+    transition-timing-function: ease-in-out
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
+    // opacity: 0
     +noSelect
     +OVER_SMALL
       top: 50%
 
     .cover
-      position: relative
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
       text-align: center
       width: 180px
       height: auto
 
-  .animate
+  .animate_width
     width: 180px !important
-    border-left: none
+
+  .animate_border
+    border: none !important
+
+
+
 

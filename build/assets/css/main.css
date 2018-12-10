@@ -297,6 +297,35 @@ p {
   text-align: center;
   border-bottom: 6px solid #0d457c; }
 
+/* The animation code */
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate3d(0, 0, 1, -200deg);
+    transform: translate(-50%, -50%) rotate3d(0, 0, 1, -200deg); }
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translate(-50%, -50%) translate3d(0, 0, 0);
+    transform: translate(-50%, -50%) translate3d(0, 0, 0); } }
+@keyframes rotate {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate3d(0, 0, 1, -200deg);
+    transform: translate(-50%, -50%) rotate3d(0, 0, 1, -200deg); }
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translate(-50%, -50%) translate3d(0, 0, 0);
+    transform: translate(-50%, -50%) translate3d(0, 0, 0); } }
+
+/* The element to apply the animation to */
+.animate_rotation {
+  -webkit-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
 .row:after, .row:before {
   content: "";
   display: table;
@@ -671,8 +700,12 @@ p {
     border-right: 1px solid #ffffff;
     border-left: 1px solid #ffffff;
     overflow: hidden;
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
     -khtml-user-select: none !important;
     -webkit-touch-callout: none !important;
     -webkit-user-select: none !important;
@@ -683,13 +716,17 @@ p {
       .article-booking .logo {
         top: 50%; } }
     .article-booking .logo .cover {
-      position: relative;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
       text-align: center;
       width: 180px;
       height: auto; }
-  .article-booking .animate {
-    width: 180px !important;
-    border-left: none; }
+  .article-booking .animate_width {
+    width: 180px !important; }
+  .article-booking .animate_border {
+    border: none !important; }
 
 .article-room .a-roomONE, .article-room .a-roomTWO, .article-room .a-roomTHREE {
   height: auto;

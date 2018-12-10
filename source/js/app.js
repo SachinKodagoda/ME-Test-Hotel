@@ -17,8 +17,27 @@ function toggle_nav(event) {
 
 $(function(){
 
-    setTimeout( function(){
-        $(".logo").addClass("animate");
-    }  , 1000 );
+    function animate_width(){
+        $(".logo").addClass("animate_width");
+    }
+
+    function animate_rotation(){
+        $(".logo").addClass("animate_rotation");
+    }
+
+    function animate_border(){
+        $(".logo").addClass("animate_border");
+    }
+
+
+
+    // document.getElementById("mp4_src").src = "assets/video/hotel.mp4";
+    // document.getElementById("f-video").load();
+
+    $(window).bind("load", function() {
+        setTimeout(animate_rotation, 1000 );
+        setTimeout(animate_width, 2000 );
+        setTimeout(animate_border, 3500 );
+     });
 
 });
