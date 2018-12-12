@@ -5,13 +5,13 @@ html(lang='en')
   body
     .top_wrapper
       .top_container
-        .article-booking.row
-          .fullscreen-bg
-            video.fullscreen_video(loop='loop', muted='muted', autoplay='true')
+        .a-booking
+          .booking-bg
+            video.booking-video(loop='loop', muted='muted', autoplay='true', poster='assets/img/img_0.jpg')
               source(src='assets/video/hotel.mp4', type='video/mp4')
               | Your browser does not support the video tag.
-          .logo
-            .cover
+          .booking-logo
+            .booking-cover
               | Wizards
               br
               | of
@@ -27,7 +27,7 @@ html(lang='en')
                 .room-body_desc From $99
                 .room-body_desc Single Bed
                 .room-body_desc 15m
-                  sup 2
+                  .sup 2
                 .room-body_desc
                   i.fa.fa-bath
                   i.fa.fa-phone
@@ -42,7 +42,7 @@ html(lang='en')
                 .room-body_desc From $149
                 .room-body_desc Queen-Size Bed
                 .room-body_desc 25m
-                  sup 2
+                  .sup 2
                 .room-body_desc
                   i.fa.fa-bath
                   i.fa.fa-phone
@@ -58,7 +58,7 @@ html(lang='en')
                 .room-body_desc From $199
                 .room-body_desc King-Size Bed
                 .room-body_desc 40m
-                  sup 2
+                  .sup 2
                 .room-body_desc
                   i.fa.fa-bath
                   i.fa.fa-phone
@@ -141,7 +141,7 @@ html(lang='en')
                     input.contact-form_group_input(type="text" placeholder="Message")
               .contact-btn Send Message
 
-        #footer
+        .footer
           .footer-header Find Us On
           .footer-socialMedia
             .icon.icon-facebook

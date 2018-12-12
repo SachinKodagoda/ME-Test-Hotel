@@ -57,7 +57,7 @@ Cheers 👍🏼
 
 
 ## BEM Method(Block Element Modifier Method)
-* Don't Use id for styling
+* Don't Use id for Chaining
     eg: #a_header
 * Don't use CSS Chaining
     .a .a_header
@@ -92,10 +92,11 @@ Cheers 👍🏼
 * Theme => optional, if theme needed
 
 
-## CSS naming
+## CSS naming and css lint rules
 * No capital names
 * css prefixed classes
     eg: .article module as .a
+* dont use !important
 
 ## My Structure (SMACSS)
 * Globals

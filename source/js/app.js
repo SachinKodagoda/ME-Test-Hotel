@@ -18,15 +18,15 @@ function toggle_nav(event) {
 $(function(){
 
     function animate_width(){
-        $(".logo").addClass("animate_width");
+        $(".booking-logo").addClass("animate_width");
     }
 
     function animate_rotation(){
-        $(".logo").addClass("animate_rotation");
+        $(".booking-logo").addClass("animate_rotation");
     }
 
     function animate_border(){
-        $(".logo").addClass("animate_border");
+        $(".booking-logo").addClass("animate_border");
     }
 
 
@@ -38,6 +38,5 @@ $(function(){
         setTimeout(animate_rotation, 1000 );
         setTimeout(animate_width, 2000 );
         setTimeout(animate_border, 3500 );
-     });
-
+    });
 });

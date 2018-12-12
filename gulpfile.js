@@ -11,6 +11,7 @@ var autoprefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
     images = require('gulp-imagemin'),
     pug = require('gulp-pug'),
+    cleanCSS = require('gulp-clean-css'),
     browserSync = require('browser-sync').create();
 
 
@@ -68,6 +69,10 @@ gulp.task('sass', function() {
             browsers: ['last 2 versions'],
             cascade: false
         }))
+        .pipe(cleanCSS({debug: true}, (details) => {
+            console.log(`${details.name}: ${details.stats.originalSize}`);
+            console.log(`${details.name}: ${details.stats.minifiedSize}`);
+          }))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(sass_dest));
 });
