@@ -7,7 +7,7 @@ html(lang='en')
       .top_container
         .a-booking
           .booking-bg
-            video.booking-video(loop='loop', muted='muted', autoplay='true', poster='assets/img/img_0.jpg')
+            video.booking-video(playsinline="playsinline" loop='loop', muted='muted', autoplay='true', poster='assets/img/img_0.jpg')
               source(src='assets/video/hotel.mp4', type='video/mp4')
               | Your browser does not support the video tag.
           .booking-logo
@@ -23,50 +23,103 @@ html(lang='en')
               .room-header
                 img.room-header_img(src="assets/img/img_1.jpg", alt="room_1")
               .room-body
-                .room-body_topic Single Room
-                .room-body_desc From $99
-                .room-body_desc Single Bed
-                .room-body_desc 15m
-                  .sup 2
+                .room-body_topic
+                  .room-body_topic_left
+                    .room-body_topic_star_cover
+                      img.room-body_topic_star(src="assets/img/full-star.svg", alt="s")
+                      img.room-body_topic_star(src="assets/img/full-star.svg", alt="s")
+                      img.room-body_topic_star(src="assets/img/full-star.svg", alt="s")
+                      img.room-body_topic_star(src="assets/img/full-star.svg", alt="s")
+                      img.room-body_topic_star(src="assets/img/half-star.svg", alt="s")
+                    .room-body_topic_name Single Room
+                  .room-body_topic_right
+                    | $99
+                    span.room-body_topic_right_span /night
                 .room-body_desc
-                  i.fa.fa-bath
-                  i.fa.fa-phone
-                  i.fa.fa-wifi
-                .room-body_btn Choose Room
+                  img.room-body_desc_correct(src="assets/img/correct.svg", alt="s") 
+                  | Perfect for traveling couples
+                .room-body_desc
+                  img.room-body_desc_correct(src="assets/img/correct.svg", alt="s") 
+                  | Breakfast included
+                .room-body_desc
+                  img.room-body_desc_correct(src="assets/img/correct.svg", alt="s") 
+                  | Two double beds
+                .room-body_desc
+                  img.room-body_desc_correct(src="assets/img/correct.svg", alt="s") 
+                  | Baby sitting facilities
+                .room-body_desc
+                  img.room-body_desc_correct(src="assets/img/correct.svg", alt="s") 
+                  | Free wifi
+                .room-body_btn
+                  | Reserve a room
           .a-room--two.col.s12.m4
             .room-container
               .room-header
                 img.room-header_img(src="assets/img/img_2.jpg", alt="room_2")
               .room-body
-                .room-body_topic Double Room
-                .room-body_desc From $149
-                .room-body_desc Queen-Size Bed
-                .room-body_desc 25m
-                  .sup 2
+                .room-body_topic
+                  .room-body_topic_left
+                    .room-body_topic_star_cover
+                      img.room-body_topic_star(src="assets/img/full-star.svg", alt="s")
+                      img.room-body_topic_star(src="assets/img/full-star.svg", alt="s")
+                      img.room-body_topic_star(src="assets/img/full-star.svg", alt="s")
+                      img.room-body_topic_star(src="assets/img/full-star.svg", alt="s")
+                      img.room-body_topic_star(src="assets/img/half-star.svg", alt="s")
+                    .room-body_topic_name Double Room
+                  .room-body_topic_right
+                    | $99
+                    span.room-body_topic_right_span /night
                 .room-body_desc
-                  i.fa.fa-bath
-                  i.fa.fa-phone
-                  i.fa.fa-wifi
-                  i.fa.fa-tv
-                .room-body_btn Choose Room
+                  img.room-body_desc_correct(src="assets/img/correct.svg", alt="s") 
+                  | Perfect for traveling couples
+                .room-body_desc
+                  img.room-body_desc_correct(src="assets/img/correct.svg", alt="s") 
+                  | Breakfast included
+                .room-body_desc
+                  img.room-body_desc_correct(src="assets/img/correct.svg", alt="s") 
+                  | Two double beds
+                .room-body_desc
+                  img.room-body_desc_correct(src="assets/img/correct.svg", alt="s") 
+                  | Baby sitting facilities
+                .room-body_desc
+                  img.room-body_desc_correct(src="assets/img/correct.svg", alt="s") 
+                  | Free wifi
+                .room-body_btn
+                  | Choose Room
           .a-room--three.col.s12.m4
             .room-container
               .room-header
                 img.room-header_img(src="assets/img/img_3.jpg", alt="room_3")
               .room-body
-                .room-body_topic Deluxe Room
-                .room-body_desc From $199
-                .room-body_desc King-Size Bed
-                .room-body_desc 40m
-                  .sup 2
+                .room-body_topic
+                  .room-body_topic_left
+                    .room-body_topic_star_cover
+                      img.room-body_topic_star(src="assets/img/full-star.svg", alt="s")
+                      img.room-body_topic_star(src="assets/img/full-star.svg", alt="s")
+                      img.room-body_topic_star(src="assets/img/full-star.svg", alt="s")
+                      img.room-body_topic_star(src="assets/img/full-star.svg", alt="s")
+                      img.room-body_topic_star(src="assets/img/half-star.svg", alt="s")
+                    .room-body_topic_name Deluxe Room
+                  .room-body_topic_right
+                    | $99
+                    span.room-body_topic_right_span /night
                 .room-body_desc
-                  i.fa.fa-bath
-                  i.fa.fa-phone
-                  i.fa.fa-wifi
-                  i.fa.fa-tv
-                  i.fa.fa-glass
-                  i.fa.fa-cutlery
-                .room-body_btn Choose Room
+                  img.room-body_desc_correct(src="assets/img/correct.svg", alt="s") 
+                  | Perfect for traveling couples
+                .room-body_desc
+                  img.room-body_desc_correct(src="assets/img/correct.svg", alt="s") 
+                  | Breakfast included
+                .room-body_desc
+                  img.room-body_desc_correct(src="assets/img/correct.svg", alt="s") 
+                  | Two double beds
+                .room-body_desc
+                  img.room-body_desc_correct(src="assets/img/correct.svg", alt="s") 
+                  | Baby sitting facilities
+                .room-body_desc
+                  img.room-body_desc_correct(src="assets/img/correct.svg", alt="s") 
+                  | Free wifi
+                .room-body_btn
+                  | Choose Room
 
         .a-message
           i.fa.fa-info.message_banner

@@ -11,6 +11,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" sizes="16x16">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="assets/css/main.css">
@@ -20,7 +21,7 @@
       <div class="top_container">
         <div class="a-booking">
           <div class="booking-bg">
-            <video class="booking-video" loop="loop" muted="muted" autoplay="true" poster="assets/img/img_0.jpg">
+            <video class="booking-video" playsinline="playsinline" loop="loop" muted="muted" autoplay="true" poster="assets/img/img_0.jpg">
               <source src="assets/video/hotel.mp4" type="video/mp4">Your browser does not support the video tag.
             </video>
           </div>
@@ -33,14 +34,19 @@
             <div class="room-container">
               <div class="room-header"><img class="room-header_img" src="assets/img/img_1.jpg" alt="room_1"></div>
               <div class="room-body">
-                <div class="room-body_topic">Single Room</div>
-                <div class="room-body_desc">From $99</div>
-                <div class="room-body_desc">Single Bed</div>
-                <div class="room-body_desc">15m
-                  <div class="sup">2</div>
+                <div class="room-body_topic">
+                  <div class="room-body_topic_left">
+                    <div class="room-body_topic_star_cover"><img class="room-body_topic_star" src="assets/img/full-star.svg" alt="s"><img class="room-body_topic_star" src="assets/img/full-star.svg" alt="s"><img class="room-body_topic_star" src="assets/img/full-star.svg" alt="s"><img class="room-body_topic_star" src="assets/img/full-star.svg" alt="s"><img class="room-body_topic_star" src="assets/img/half-star.svg" alt="s"></div>
+                    <div class="room-body_topic_name">Single Room</div>
+                  </div>
+                  <div class="room-body_topic_right">$99<span class="room-body_topic_right_span">/night</span></div>
                 </div>
-                <div class="room-body_desc"><i class="fa fa-bath"></i><i class="fa fa-phone"></i><i class="fa fa-wifi"></i></div>
-                <div class="room-body_btn">Choose Room</div>
+                <div class="room-body_desc"><img class="room-body_desc_correct" src="assets/img/correct.svg" alt="s">Perfect for traveling couples</div>
+                <div class="room-body_desc"><img class="room-body_desc_correct" src="assets/img/correct.svg" alt="s">Breakfast included</div>
+                <div class="room-body_desc"><img class="room-body_desc_correct" src="assets/img/correct.svg" alt="s">Two double beds</div>
+                <div class="room-body_desc"><img class="room-body_desc_correct" src="assets/img/correct.svg" alt="s">Baby sitting facilities</div>
+                <div class="room-body_desc"><img class="room-body_desc_correct" src="assets/img/correct.svg" alt="s">Free wifi</div>
+                <div class="room-body_btn">Reserve a room</div>
               </div>
             </div>
           </div>
@@ -48,13 +54,18 @@
             <div class="room-container">
               <div class="room-header"><img class="room-header_img" src="assets/img/img_2.jpg" alt="room_2"></div>
               <div class="room-body">
-                <div class="room-body_topic">Double Room</div>
-                <div class="room-body_desc">From $149</div>
-                <div class="room-body_desc">Queen-Size Bed</div>
-                <div class="room-body_desc">25m
-                  <div class="sup">2</div>
+                <div class="room-body_topic">
+                  <div class="room-body_topic_left">
+                    <div class="room-body_topic_star_cover"><img class="room-body_topic_star" src="assets/img/full-star.svg" alt="s"><img class="room-body_topic_star" src="assets/img/full-star.svg" alt="s"><img class="room-body_topic_star" src="assets/img/full-star.svg" alt="s"><img class="room-body_topic_star" src="assets/img/full-star.svg" alt="s"><img class="room-body_topic_star" src="assets/img/half-star.svg" alt="s"></div>
+                    <div class="room-body_topic_name">Double Room</div>
+                  </div>
+                  <div class="room-body_topic_right">$99<span class="room-body_topic_right_span">/night</span></div>
                 </div>
-                <div class="room-body_desc"><i class="fa fa-bath"></i><i class="fa fa-phone"></i><i class="fa fa-wifi"></i><i class="fa fa-tv"></i></div>
+                <div class="room-body_desc"><img class="room-body_desc_correct" src="assets/img/correct.svg" alt="s">Perfect for traveling couples</div>
+                <div class="room-body_desc"><img class="room-body_desc_correct" src="assets/img/correct.svg" alt="s">Breakfast included</div>
+                <div class="room-body_desc"><img class="room-body_desc_correct" src="assets/img/correct.svg" alt="s">Two double beds</div>
+                <div class="room-body_desc"><img class="room-body_desc_correct" src="assets/img/correct.svg" alt="s">Baby sitting facilities</div>
+                <div class="room-body_desc"><img class="room-body_desc_correct" src="assets/img/correct.svg" alt="s">Free wifi</div>
                 <div class="room-body_btn">Choose Room</div>
               </div>
             </div>
@@ -63,13 +74,18 @@
             <div class="room-container">
               <div class="room-header"><img class="room-header_img" src="assets/img/img_3.jpg" alt="room_3"></div>
               <div class="room-body">
-                <div class="room-body_topic">Deluxe Room</div>
-                <div class="room-body_desc">From $199</div>
-                <div class="room-body_desc">King-Size Bed</div>
-                <div class="room-body_desc">40m
-                  <div class="sup">2</div>
+                <div class="room-body_topic">
+                  <div class="room-body_topic_left">
+                    <div class="room-body_topic_star_cover"><img class="room-body_topic_star" src="assets/img/full-star.svg" alt="s"><img class="room-body_topic_star" src="assets/img/full-star.svg" alt="s"><img class="room-body_topic_star" src="assets/img/full-star.svg" alt="s"><img class="room-body_topic_star" src="assets/img/full-star.svg" alt="s"><img class="room-body_topic_star" src="assets/img/half-star.svg" alt="s"></div>
+                    <div class="room-body_topic_name">Deluxe Room</div>
+                  </div>
+                  <div class="room-body_topic_right">$99<span class="room-body_topic_right_span">/night</span></div>
                 </div>
-                <div class="room-body_desc"><i class="fa fa-bath"></i><i class="fa fa-phone"></i><i class="fa fa-wifi"></i><i class="fa fa-tv"></i><i class="fa fa-glass"></i><i class="fa fa-cutlery"></i></div>
+                <div class="room-body_desc"><img class="room-body_desc_correct" src="assets/img/correct.svg" alt="s">Perfect for traveling couples</div>
+                <div class="room-body_desc"><img class="room-body_desc_correct" src="assets/img/correct.svg" alt="s">Breakfast included</div>
+                <div class="room-body_desc"><img class="room-body_desc_correct" src="assets/img/correct.svg" alt="s">Two double beds</div>
+                <div class="room-body_desc"><img class="room-body_desc_correct" src="assets/img/correct.svg" alt="s">Baby sitting facilities</div>
+                <div class="room-body_desc"><img class="room-body_desc_correct" src="assets/img/correct.svg" alt="s">Free wifi</div>
                 <div class="room-body_btn">Choose Room</div>
               </div>
             </div>
