@@ -10,13 +10,24 @@ html(lang='en')
             video.booking-video(playsinline="playsinline" loop='loop', muted='muted', autoplay='true', poster='assets/img/img_0.jpg')
               source(src='assets/video/hotel.mp4', type='video/mp4')
               | Your browser does not support the video tag.
+          img.booking-guest(src="assets/img/guest.svg", alt="guest")
           .booking-logo
             .booking-cover
-              | Wizards
+              | TWIN
               br
-              | of
+              | SHIELD
               br
-              |Digital Arts
+              | RESORT
+          .booking-details
+            .booking-details_wheather Tokyo, Japan: 4 &#176;C
+            .booking-details_img_cover
+              img.booking-details_img(src="assets/img/sunny.svg", alt="sunny")
+              img.booking-details_img(src="assets/img/half-sunny.svg", alt="half-sunny")
+              img.booking-details_img(src="assets/img/windy.svg", alt="windy")
+              img.booking-details_img(src="assets/img/cloudy.svg", alt="cloudy")
+              img.booking-details_img(src="assets/img/rainny.svg", alt="rainny")
+              img.booking-details_img(src="assets/img/snowflake.svg", alt="snowflake")
+
         .a-room.row
           .a-room--one.col.s12.m4
             .room-container
