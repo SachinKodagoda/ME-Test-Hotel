@@ -29,7 +29,7 @@ html(lang='en')
               img.booking-details_img(src="assets/img/snowflake.svg", alt="snowflake")
 
         .a-room.row
-          .a-room--one.col.s12.m4
+          .a-room--one.col.s12.l4
             .room-container
               .room-header
                 img.room-header_img(src="assets/img/img_1.jpg", alt="room_1")
@@ -63,7 +63,7 @@ html(lang='en')
                   | Free wifi
                 .room-body_btn
                   | Reserve a room
-          .a-room--two.col.s12.m4
+          .a-room--two.col.s12.l4
             .room-container
               .room-header
                 img.room-header_img(src="assets/img/img_2.jpg", alt="room_2")
@@ -97,7 +97,7 @@ html(lang='en')
                   | Free wifi
                 .room-body_btn
                   | Choose Room
-          .a-room--three.col.s12.m4
+          .a-room--three.col.s12.l4
             .room-container
               .room-header
                 img.room-header_img(src="assets/img/img_3.jpg", alt="room_3")
@@ -151,44 +151,95 @@ html(lang='en')
                 .food-body-topic_menu
                   img.food-body-topic_menu_img(src="assets/img/fruits.svg", alt="s")
                   | Dessert
-                .food-body-topic_menu.sp_r_margin
+                .food-body-topic_menu.food_sp_r_margin
                   img.food-body-topic_menu_img(src="assets/img/beverage.svg", alt="s")
                   | Drinks
 
-              .food-body-items-cover
-                .food-body-item
-                  .food-body-item_left
-                    img.food-body-item_left_img(src="assets/img/food_item.jpg", alt="s")
-                  .food-body-item_middle
-                    .food-body-item_middle_content Grilled Beef with potatoes
-                      .food-body-item_middle_sub_content Meat, Potatoes, Rice, Tomatoe
-                  .food-body-item_right
-                    .food-body-item_right_content $29
-                .food-body-item
-                  .food-body-item_left
-                    img.food-body-item_left_img(src="assets/img/food_item.jpg", alt="s")
-                  .food-body-item_middle
-                    .food-body-item_middle_content Grilled Beef with potatoes
-                      .food-body-item_middle_sub_content Meat, Potatoes, Rice, Tomatoe
-                  .food-body-item_right
-                    .food-body-item_right_content $29
-                .food-body-item
-                  .food-body-item_left
-                    img.food-body-item_left_img(src="assets/img/food_item.jpg", alt="s")
-                  .food-body-item_middle
-                    .food-body-item_middle_content Grilled Beef with potatoes
-                      .food-body-item_middle_sub_content Meat, Potatoes, Rice, Tomatoe
-                  .food-body-item_right
-                    .food-body-item_right_content $29
-                .food-body-item
-                  .food-body-item_left
-                    img.food-body-item_left_img(src="assets/img/food_item.jpg", alt="s")
-                  .food-body-item_middle
-                    .food-body-item_middle_content Grilled Beef with potatoes
-                      .food-body-item_middle_sub_content Meat, Potatoes, Rice, Tomatoe
-                  .food-body-item_right
-                    .food-body-item_right_content $29
+              .food-body-item-cover.row
+                .food-body-item-subcover.col.s12.xl6.food_padding_right
+                  .food-body-item.food_float_right
+                    .food-body-item_left
+                      img.food-body-item_left_img(src="assets/img/food_item.jpg", alt="s")
+                    .food-body-item_middle
+                      .food-body-item_middle_content Grilled Beef with potatoes
+                        .food-body-item_middle_sub_content Meat, Potatoes, Rice, Tomatoe
+                    .food-body-item_right
+                      .food-body-item_right_content $29
+                  .food-body-item.food_float_right
+                    .food-body-item_left
+                      img.food-body-item_left_img(src="assets/img/food_item.jpg", alt="s")
+                    .food-body-item_middle
+                      .food-body-item_middle_content Fruit Vanilla Ice Cream
+                        .food-body-item_middle_sub_content Meat, Potatoes, Rice, Tomatoe
+                    .food-body-item_right
+                      .food-body-item_right_content $29
+                  .food-body-item.food_float_right
+                    .food-body-item_left
+                      img.food-body-item_left_img(src="assets/img/food_item.jpg", alt="s")
+                    .food-body-item_middle
+                      .food-body-item_middle_content Asian Hoisin Pork
+                        .food-body-item_middle_sub_content Meat, Potatoes, Rice, Tomatoe
+                    .food-body-item_right
+                      .food-body-item_right_content $29
+                  .food-body-item.food_float_right
+                    .food-body-item_left
+                      img.food-body-item_left_img(src="assets/img/food_item.jpg", alt="s")
+                    .food-body-item_middle
+                      .food-body-item_middle_content Spicy Fried Rice & Bacon
+                        .food-body-item_middle_sub_content Meat, Potatoes, Rice, Tomatoe
+                    .food-body-item_right
+                      .food-body-item_right_content $29
+                  .food-body-item.food_float_right
+                    .food-body-item_left
+                      img.food-body-item_left_img(src="assets/img/food_item.jpg", alt="s")
+                    .food-body-item_middle
+                      .food-body-item_middle_content Mango Chili Chutney
+                        .food-body-item_middle_sub_content Meat, Potatoes, Rice, Tomatoe
+                    .food-body-item_right.food_sp_pad
+                      .food-body-item_right_content $29
 
+
+                .food-body-item-subcover.col.s12.xl6.food_padding_left
+                  .food-body-item.food_float_left.food_sp_pad
+                    .food-body-item_left
+                      img.food-body-item_left_img(src="assets/img/food_item.jpg", alt="s")
+                    .food-body-item_middle
+                      .food-body-item_middle_content Chinese Pancakes
+                        .food-body-item_middle_sub_content Meat, Potatoes, Rice, Tomatoe
+                    .food-body-item_right
+                      .food-body-item_right_content $29
+                  .food-body-item.food_float_left
+                    .food-body-item_left
+                      img.food-body-item_left_img(src="assets/img/food_item.jpg", alt="s")
+                    .food-body-item_middle
+                      .food-body-item_middle_content Soup With Vegetables And Meat
+                        .food-body-item_middle_sub_content Meat, Potatoes, Rice, Tomatoe
+                    .food-body-item_right
+                      .food-body-item_right_content $29
+                  .food-body-item.food_float_left
+                    .food-body-item_left
+                      img.food-body-item_left_img(src="assets/img/food_item.jpg", alt="s")
+                    .food-body-item_middle
+                      .food-body-item_middle_content Udon Noodles With Vegetables
+                        .food-body-item_middle_sub_content Meat, Potatoes, Rice, Tomatoe
+                    .food-body-item_right
+                      .food-body-item_right_content $29
+                  .food-body-item.food_float_left
+                    .food-body-item_left
+                      img.food-body-item_left_img(src="assets/img/food_item.jpg", alt="s")
+                    .food-body-item_middle
+                      .food-body-item_middle_content Baked Lobster With A Garnish
+                        .food-body-item_middle_sub_content Meat, Potatoes, Rice, Tomatoe
+                    .food-body-item_right
+                      .food-body-item_right_content $29
+                  .food-body-item.food_float_left
+                    .food-body-item_left
+                      img.food-body-item_left_img(src="assets/img/food_item.jpg", alt="s")
+                    .food-body-item_middle
+                      .food-body-item_middle_content Octopus with Vegetables
+                        .food-body-item_middle_sub_content Meat, Potatoes, Rice, Tomatoe
+                    .food-body-item_right
+                      .food-body-item_right_content $29
 
         .a-location
           .location-body

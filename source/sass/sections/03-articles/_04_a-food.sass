@@ -4,9 +4,6 @@
 .food
     &-container
         height: auto
-        // padding: 16px
-        // border: 1px solid #000
-        // background: #F8FAFF
     &-subhead
         font-family: "Playfair Display", Georgia, serif
         text-align: center
@@ -30,31 +27,49 @@
                 color: #a5a5ab
                 font-weight: 700
                 padding: 20px 0
+                +noSelect
+                &:hover
+                    background: #FF6239
+                    color: #ffffff
                 &_img
                     width: 20px
                     height: 20px
                     margin-bottom: 0
                     margin-right: 5px
                     vertical-align: middle
-        &-items-cover
+        &-item-cover
             width: 100%
             height: auto
+        &-item-subcover
+            height: auto
+            +clearfix
         &-item
-            width: 100%
+            cursor: pointer
+            width: auto
             height: auto
             background: #ffffff
             border: 1px solid #ccc
-            margin: 16px 0
+            margin: 8px auto
             transition: all 0.3s ease
             box-shadow: 0px 1px 18px -12px rgba(0, 0, 0, 0.75)
             display: flex
-            padding: 10px
-            +OVER_SMALL
-                width: 400px
+            padding: 16px
+            +noSelect
+            +tap_highlight_issue
+            +MEDIUM
+                width: 480px
+            +XLARGE
+                width: 450px
+            +XXLARGE
+                width: 480px
+            &:hover
+                background: #FF6239
+                .food-body-item_middle_sub_content, .food-body-item_right_content
+                    color: #ffffff
             &_left
                 &_img
-                    width: 60px
-                    height: 60px
+                    width: 70px
+                    height: 70px
                     border-radius: 100%
                     position: relative
                     top: 50%
@@ -62,13 +77,24 @@
             &_middle
                 padding-left: 20px
                 font-family: Raleway,Arial,Helvetica,sans-serif
+                width: 100%
+                +MEDIUM
+                    width: 380px
+                +XLARGE
+                    width: 400px
+                +XXLARGE
+                    width: 380px
                 &_content
                     position: relative
                     top: 50%
                     transform: translateY(-50%)
                     font-weight: 600
+                    font-size: 18px
+
                 &_sub_content
+                    margin-top: 8px
                     font-weight: 400
+                    font-size: 16px
             &_right
                 padding-left: 20px
                 &_content
@@ -76,10 +102,31 @@
                     top: 50%
                     transform: translateY(-50%)
                     color: #FF6239
-                    font-size: 20px
+                    font-size: 32px
+                    font-family: "Playfair Display", Georgia, serif
 
 
 
+.food_sp_pad
+    margin: 0 auto
+    +MEDIUM
+        margin: 8px auto
 
-.sp_r_margin
+.food_sp_r_margin
     margin-right: 0
+.food_float_left
+    float: none
+    +XXLARGE
+        float: left
+.food_float_right
+    float: none
+    +XXLARGE
+        float: right
+.food_padding_left
+    padding-left: 0
+    +XXLARGE
+        padding-left: 16px
+.food_padding_right
+    padding-right: 0
+    +XXLARGE
+        padding-right: 16px

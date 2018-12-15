@@ -36,8 +36,12 @@
 .top_wrapper
   overflow-x: hidden
   // overflow-y: scroll
-  width: 100%
+  max-width: 1440px
+  margin: 0
   height: 100%
+  +XXXLARGE
+    margin: 0 auto
+    border: 1px solid #ccc
 
 
 .button_type1
@@ -136,7 +140,13 @@
       width: (100/12 * $i)#{%}
 
 +sizes(s)
-@media (min-width:601px)
+@media (min-width: 576px)
   +sizes(m)
-@media (min-width:993px)
+@media (min-width: 769px)
   +sizes(l)
+@media (min-width: 992px)
+  +sizes(xl)
+@media (min-width: 1201px)
+  +sizes(xxl)
+@media (min-width: 1441px)
+  +sizes(xxxl)

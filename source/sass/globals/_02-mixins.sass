@@ -1,20 +1,29 @@
 // RESPONSIVE CLASSES
-=OVER_SMALL
-  @media only screen and (min-width: 600px)
+
+// (for tablet)
+=MEDIUM
+  @media only screen and (min-width: 576px)
     @content
 
-=OVER_MEDIUM
-  @media only screen and (min-width: 900px)
+// (landscape of tablet)
+=LARGE
+  @media only screen and (min-width: 769px)
     @content
 
-=OVER_LARGE
-  @media only screen and (min-width: 1200px)
+// (for small Laptop)
+=XLARGE
+  @media only screen and (min-width: 992px)
     @content
 
-=OVER_XLARGE
-  @media only screen and (min-width: 1800px)
+// (for large laptop)
+=XXLARGE
+  @media only screen and (min-width: 1201px)
     @content
 
+// (for 4k)
+=XXXLARGE
+  @media only screen and (min-width: 1441px)
+    @content
 
 =keyframes($name)
   @-webkit-keyframes #{$name}
