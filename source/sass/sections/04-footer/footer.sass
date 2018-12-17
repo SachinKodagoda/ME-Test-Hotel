@@ -1,29 +1,26 @@
 .footer
-  height: auto
-  background: #FFF
-  color: #000
-  &-header
-    margin-top: 20px
-    text-align: center
-    font-weight: 600
-    font-size: 18px
-  &-socialMedia
-    margin: 20px auto 0 auto
+  +clearfix
+  height: 500px
+  background: #2C2727
+  color: #ffffff
+  font-weight: 400
+  text-align: left
+  display: flex
+  justify-content: center
+
+.f-item
+  width: 255px
+  &_head
     width: 100%
-    height: auto
-    display: flex
-    justify-content: center
-  &-bottom
-    text-align: center
-    font-weight: 400
-    font-size: 18px
-    margin-top: 20px
-
-.icon
-  margin-left: 20px
-  width: 40px
-  height: 40px
-  // float: left
-.icon:first-child
-  margin-left: 0
-
+    font-size: 24px
+    font-family: "Playfair Display", Georgia, serif
+    margin-bottom: 40px
+  &_body
+    color: #8F8D77
+    font-size: 16px
+  &_date
+    width: 100%
+    color: #8F8D77
+    margin-bottom: 16px
+  &_range
+    color: #ffffff

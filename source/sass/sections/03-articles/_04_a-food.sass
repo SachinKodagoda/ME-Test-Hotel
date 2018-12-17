@@ -1,9 +1,12 @@
 .a-food
     padding: 16px
-    +font_desc
+    font-size: 16px
+    font-weight: 400
+    font-family: Raleway,Arial,Helvetica,sans-serif
 .food
     &-container
         height: auto
+        background: #F8FAFF
     &-subhead
         font-family: "Playfair Display", Georgia, serif
         text-align: center
@@ -40,9 +43,15 @@
         &-item-cover
             width: 100%
             height: auto
+            margin: 16px auto
         &-item-subcover
             height: auto
             +clearfix
+            +XLARGE
+                display: flex
+                justify-content: center
+                max-width: 1100px
+                margin: auto
         &-item
             cursor: pointer
             width: auto
@@ -54,6 +63,8 @@
             box-shadow: 0px 1px 18px -12px rgba(0, 0, 0, 0.75)
             display: flex
             padding: 16px
+            +clearfix
+            +break_words
             +noSelect
             +tap_highlight_issue
             +MEDIUM
@@ -64,6 +75,7 @@
                 width: 480px
             &:hover
                 background: #FF6239
+                border-color: #000
                 .food-body-item_middle_sub_content, .food-body-item_right_content
                     color: #ffffff
             &_left
@@ -76,7 +88,6 @@
                     transform: translateY(-50%)
             &_middle
                 padding-left: 20px
-                font-family: Raleway,Arial,Helvetica,sans-serif
                 width: 100%
                 +MEDIUM
                     width: 380px
@@ -94,7 +105,6 @@
                 &_sub_content
                     margin-top: 8px
                     font-weight: 400
-                    font-size: 16px
             &_right
                 padding-left: 20px
                 &_content
@@ -107,26 +117,9 @@
 
 
 
-.food_sp_pad
-    margin: 0 auto
-    +MEDIUM
-        margin: 8px auto
-
-.food_sp_r_margin
+.food_sp_r_margin_topic
     margin-right: 0
-.food_float_left
-    float: none
-    +XXLARGE
-        float: left
-.food_float_right
-    float: none
-    +XXLARGE
-        float: right
-.food_padding_left
-    padding-left: 0
-    +XXLARGE
-        padding-left: 16px
-.food_padding_right
-    padding-right: 0
-    +XXLARGE
-        padding-right: 16px
+.food_sp_r_margin_body
+    margin: 0 auto
+    +XLARGE
+        margin: 8px auto
