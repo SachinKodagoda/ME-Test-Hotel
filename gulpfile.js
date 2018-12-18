@@ -1,3 +1,5 @@
+'use strict';
+
 // --------------------------------------------
 // Dependencies
 // --------------------------------------------
@@ -21,7 +23,7 @@ var img_src         =   'source/img/other/*',
     script_src      =   'source/js/*.js',
     vendors_src     =   'source/js/vendors/',
     vendors_src_arr =  ['source/js/vendors/jquery.min.js','source/js/vendors/*.js'],
-    sass_dest       =   'build/assets/css',
+    sass_dest       =   'build/assets/css/',
     img_dest        =   'build/assets/img',
     script_dest     =   'build/assets/js',
     pug_src         =   'source/pug/pages/*.pug',
@@ -58,13 +60,14 @@ gulp.task('sass', function() {
     gulp.src(sass_src)
         .pipe(sourcemaps.init())
         .pipe(plumber())
-        .on('error', function(errorInfo) {
-            console.log(errorInfo.toString());
-            this.emit('end');
-        })
+        // .on('error', function(errorInfo) {
+        //     console.log(errorInfo.toString());
+        //     this.emit('end');
+        // })
         .pipe(sass({
             style: 'compressed'
-        }))
+        }).on('error', sass.logError))
+
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
