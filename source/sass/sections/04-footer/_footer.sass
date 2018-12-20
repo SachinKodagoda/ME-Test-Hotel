@@ -7,13 +7,18 @@
 
 .f-container
   padding: 20px
-  display: flex
-  justify-content: center
+  display: block
   +clearfix
+  +LARGE
+    display: flex
+    justify-content: center
 
 .f-item
-  width: 220px
-  margin: 0 20px
+  width: 280px
+  margin: 0 auto
+  +LARGE
+    margin: 0 20px
+
   &_head
     width: 100%
     font-size: 24px

@@ -21,7 +21,7 @@
       <div class="top_container">
         <div class="a-booking">
           <div class="booking-bg">
-            <video class="booking-video" playsinline="playsinline" loop="loop" muted="muted" autoplay="true" poster="assets/img/img_0.jpg">
+            <video class="booking-video" playsinline="playsinline" loop="loop" muted="muted" autoplay="true">
               <source src="assets/video/hotel.mp4" type="video/mp4">Your browser does not support the video tag.
             </video>
           </div><img class="booking-guest" src="assets/img/guest.svg" alt="guest">
@@ -31,6 +31,34 @@
           <div class="booking-details">
             <div class="booking-details_wheather">Tokyo, Japan: 4 &#176;C</div>
             <div class="booking-details_img_cover"><img class="booking-details_img" src="assets/img/sunny.svg" alt="sunny"><img class="booking-details_img" src="assets/img/half-sunny.svg" alt="half-sunny"><img class="booking-details_img" src="assets/img/windy.svg" alt="windy"><img class="booking-details_img" src="assets/img/cloudy.svg" alt="cloudy"><img class="booking-details_img" src="assets/img/rainny.svg" alt="rainny"><img class="booking-details_img" src="assets/img/snowflake.svg" alt="snowflake"></div>
+          </div>
+        </div>
+        <div class="a-order">
+          <div class="order-container">
+            <form class="order-form">
+              <div class="order-form-head"><i class="fa fa-bed"></i>
+                <lable>Hotel Name</lable>
+              </div>
+              <div class="order-form-body">
+                <div class="order-form-group"><i class="fa fa-calendar-o"></i>
+                  <lable>Check In</lable>
+                  <input class="txt_input" type="text" placeholder="DD MM YYYY">
+                </div>
+                <div class="order-form-group"><i class="fa fa-calendar-o"></i>
+                  <lable>Check Out</lable>
+                  <input class="txt_input" type="text" placeholder="DD MM YYYY">
+                </div>
+                <div class="order-form-group"><i class="fa fa-male"></i>
+                  <lable>Adults</lable>
+                  <input class="txt_input" type="number" value="1" name="Adults" min="1" max="6">
+                </div>
+                <div class="order-form-group"><i class="fa fa-child"></i>
+                  <lable>Kids</lable>
+                  <input class="txt_input" type="number" value="0" name="Kids" min="0" max="6">
+                </div>
+                <div class="order-form-search-btn"><i class="fa fa-search"></i><span>Search Availability</span></div>
+              </div>
+            </form>
           </div>
         </div>
         <div class="a-room row">
@@ -238,41 +266,40 @@
             </div>
           </div>
         </div>
-        <div class="a-event">
-          <div class="event-container">
-            <div class="event-container-sub_left">
-              <div class="a-hotel row">
-                <div class="col s12 m6">
-                  <div class="row">
-                    <div class="col s12">
-                      <div class="hotel-body"><img class="hotel-body_img" src="assets/img/img_5.jpg" alt="location">
-                        <div class="hotel-body_desc">Cinque Terre</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6">
-                  <div class="row">
-                    <div class="row">
-                      <div class="hotel-body col s12 m6"><img class="hotel-body_img" src="assets/img/img_6.jpg" alt="location">
-                        <div class="hotel-body_desc">New York</div>
-                      </div>
-                      <div class="hotel-body col s12 m6"><img class="hotel-body_img" src="assets/img/img_7.jpg" alt="location">
-                        <div class="hotel-body_desc"> San Francisco</div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="hotel-body col s12 m6"><img class="hotel-body_img" src="assets/img/img_8.jpg" alt="location">
-                        <div class="hotel-body_desc">Pisa</div>
-                      </div>
-                      <div class="hotel-body col s12 m6"><img class="hotel-body_img" src="assets/img/img_9.jpg" alt="location">
-                        <div class="hotel-body_desc">Paris</div>
-                      </div>
-                    </div>
-                  </div>
+        <div class="a-hotel row">
+          <div class="col s12 m6">
+            <div class="row">
+              <div class="col s12">
+                <div class="hotel-body"><img class="hotel-body_img" src="assets/img/img_5.jpg" alt="location">
+                  <div class="hotel-body_desc">X'mas Parties</div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="row">
+              <div class="row">
+                <div class="hotel-body col s12 m6"><img class="hotel-body_img" src="assets/img/img_6.jpg" alt="location">
+                  <div class="hotel-body_desc">Food</div>
+                </div>
+                <div class="hotel-body col s12 m6"><img class="hotel-body_img" src="assets/img/img_7.jpg" alt="location">
+                  <div class="hotel-body_desc"> Drinks</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="hotel-body col s12 m6"><img class="hotel-body_img" src="assets/img/img_8.jpg" alt="location">
+                  <div class="hotel-body_desc">Swimming</div>
+                </div>
+                <div class="hotel-body col s12 m6"><img class="hotel-body_img" src="assets/img/img_9.jpg" alt="location">
+                  <div class="hotel-body_desc">DJ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="a-event">
+          <div class="event-container">
+            <div class="event-container-sub_left"><img class="event-container-sub_left_img" src="assets/img/events.png" alt="location"></div>
             <div class="event-container-sub_right">
               <div class="event-item">
                 <div class="event-item_calender_cover">
@@ -291,7 +318,7 @@
                   </div>
                 </div>
               </div>
-              <div class="event-item">
+              <div class="event-item event_no_margin_bottom">
                 <div class="event-item_calender_cover">
                   <div class="event-item_calender">
                     <div class="event-item_calender_date">12</div>
@@ -311,19 +338,11 @@
             </div>
           </div>
         </div>
-        <div class="a-location">
-          <div class="location-body">
-            <div class="location-body_address"><i class="fa fa-map-marker"></i>No:xx , Some adr , Province , Country</div>
-            <div class="location-body_address"><i class="fa fa-phone"></i>Phone: +94 123456789</div>
-            <div class="location-body_address"><i class="fa fa-envelope"></i>Email: mail@mail.com</div>
-          </div>
-        </div>
         <div class="a-subscribe">
           <div class="subscribe-container">
             <div class="subscribe-head">Get the best offers first!</div>
             <form class="subscribe-form">
               <div class="subscribe-form_group">
-                <lable>Email</lable>
                 <input class="subscribe-form_group_input" type="text" placeholder="Your Email Address">
               </div>
             </form>

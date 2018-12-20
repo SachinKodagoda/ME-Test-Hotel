@@ -1,12 +1,16 @@
 .a-food
-    padding: 16px
+    padding: 0 16px
     font-size: 16px
     font-weight: 400
     font-family: Raleway,Arial,Helvetica,sans-serif
+
 .food
     &-container
+        padding: 16px 0
         height: auto
         background: #F8FAFF
+        +XLARGE
+            padding: 32px 0
     &-subhead
         font-family: "Playfair Display", Georgia, serif
         text-align: center
@@ -20,6 +24,9 @@
             +clearfix
             display: flex
             justify-content: center
+            padding: 16px 0
+            +XLARGE
+                padding: 32px 0
             &_menu
                 width: 110px
                 background: #ffffff
@@ -43,7 +50,7 @@
         &-item-cover
             width: 100%
             height: auto
-            margin: 16px auto
+            margin: 0 auto
         &-item-subcover
             height: auto
             +clearfix

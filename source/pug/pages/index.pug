@@ -7,7 +7,7 @@ html(lang='en')
       .top_container
         .a-booking
           .booking-bg
-            video.booking-video(playsinline="playsinline" loop='loop', muted='muted', autoplay='true', poster='assets/img/img_0.jpg')
+            video.booking-video(playsinline="playsinline" loop='loop', muted='muted', autoplay='true')
               source(src='assets/video/hotel.mp4', type='video/mp4')
               | Your browser does not support the video tag.
           img.booking-guest(src="assets/img/guest.svg", alt="guest")
@@ -27,6 +27,34 @@ html(lang='en')
               img.booking-details_img(src="assets/img/cloudy.svg", alt="cloudy")
               img.booking-details_img(src="assets/img/rainny.svg", alt="rainny")
               img.booking-details_img(src="assets/img/snowflake.svg", alt="snowflake")
+        .a-order
+          .order-container
+            form.order-form
+              .order-form-head
+                i.fa.fa-bed
+                lable Hotel Name
+              .order-form-body
+                .order-form-group
+                  i.fa.fa-calendar-o
+                  lable Check In
+                  input.txt_input(type="text" placeholder="DD MM YYYY")
+                .order-form-group
+                  i.fa.fa-calendar-o
+                  lable Check Out
+                  input.txt_input(type="text" placeholder="DD MM YYYY")
+                .order-form-group
+                  i.fa.fa-male
+                  lable Adults
+                  input.txt_input(type="number" value="1" name="Adults" min="1" max="6")
+                .order-form-group
+                  i.fa.fa-child
+                  lable Kids
+                  input.txt_input(type="number" value="0" name="Kids" min="0" max="6")
+                .order-form-search-btn
+                  i.fa.fa-search
+                  span Search Availability
+
+
 
         .a-room.row
           .a-room--one.col.s12.l4
@@ -241,33 +269,33 @@ html(lang='en')
                         .food-body-item_middle_sub_content Meat, Potatoes, Rice, Tomatoe
                     .food-body-item_right
                       .food-body-item_right_content $29
-        .a-event
-          .event-container
-            .event-container-sub_left
-              .a-hotel.row
+        .a-hotel.row
                 .col.s12.m6
                   .row
                     .col.s12
                       .hotel-body
                         img.hotel-body_img(src="assets/img/img_5.jpg", alt="location")
-                        .hotel-body_desc Cinque Terre
+                        .hotel-body_desc X'mas Parties
                 .col.s12.m6
                   .row
                     .row
                       .hotel-body.col.s12.m6
                         img.hotel-body_img(src="assets/img/img_6.jpg", alt="location")
-                        .hotel-body_desc New York
+                        .hotel-body_desc Food
                       .hotel-body.col.s12.m6
                         img.hotel-body_img(src="assets/img/img_7.jpg", alt="location")
-                        .hotel-body_desc  San Francisco
+                        .hotel-body_desc  Drinks
                     .row
                       .hotel-body.col.s12.m6
                         img.hotel-body_img(src="assets/img/img_8.jpg", alt="location")
-                        .hotel-body_desc Pisa
+                        .hotel-body_desc Swimming
                       .hotel-body.col.s12.m6
                         img.hotel-body_img(src="assets/img/img_9.jpg", alt="location")
-                        .hotel-body_desc Paris
-
+                        .hotel-body_desc DJ
+        .a-event
+          .event-container
+            .event-container-sub_left
+              img.event-container-sub_left_img(src="assets/img/events.png", alt="location")
             .event-container-sub_right
               .event-item
                 .event-item_calender_cover
@@ -282,7 +310,7 @@ html(lang='en')
                   .event-item_dec_btn_cover
                     .event-item_dec_btn_join join event
                     .event-item_dec_btn_details see details
-              .event-item
+              .event-item.event_no_margin_bottom
                 .event-item_calender_cover
                   .event-item_calender
                     .event-item_calender_date 12
@@ -295,26 +323,11 @@ html(lang='en')
                   .event-item_dec_btn_cover
                     .event-item_dec_btn_join join event
                     .event-item_dec_btn_details see details
-        .a-location
-          .location-body
-            .location-body_address
-              i.fa.fa-map-marker
-              | No:xx , Some adr , Province , Country
-            .location-body_address
-              i.fa.fa-phone
-              | Phone: +94 123456789
-            .location-body_address
-              i.fa.fa-envelope
-              | Email: mail@mail.com
-
-
-
         .a-subscribe
           .subscribe-container
             .subscribe-head Get the best offers first!
             form.subscribe-form
               .subscribe-form_group
-                lable Email
                 input.subscribe-form_group_input(type="text" placeholder="Your Email Address")
             .subscribe-btn Subscribe
 

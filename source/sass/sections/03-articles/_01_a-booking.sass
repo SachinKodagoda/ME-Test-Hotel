@@ -4,12 +4,17 @@
   position: relative
 .booking
   &-bg
-    background: #000
+    background-image: url("../img/img_0.jpg")
+    background-color: #000
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
     overflow: hidden
     width: 100%
     height: auto
     position: relative
-    +MEDIUM
+    +XLARGE
+      background: #000
   &-guest
     position: absolute
     top: calc( 50% - 180px)
@@ -19,9 +24,17 @@
     height: 50px
   &-video
     width: auto
-    height: calc(100vh - 60px)
+    height: calc(100vh - 55px)
+    margin: auto
+    display: block
+    // background: transparent url("../assets/img/img_0.jpg") no-repeat 0 0
+    // background-size: cover
     +MEDIUM
+      width: auto
       height: 100vh
+    +XXXLARGE
+      width: 100%
+
   &-logo
     position: absolute
     left: 50%

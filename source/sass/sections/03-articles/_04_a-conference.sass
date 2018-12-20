@@ -1,7 +1,7 @@
 .a-conference
     position: relative
     width: calc(100% - 32px)
-    height: 200px
+    height: 400px
     background: #F44336
     color: #ffffff
     text-align: center
@@ -12,8 +12,6 @@
     background-attachment: fixed
     font-family: 'Raleway', sans-serif
     margin: 0 16px
-    +MEDIUM
-        height: 400px
     &-bg
         position: absolute
         width: 100%
@@ -27,8 +25,8 @@
         text-align: center
         width: 250px
         +MEDIUM
-                font-size: 20px
-                width: 350px
+            font-size: 20px
+            width: 350px
         &_btn
             @extend .btn
             border: 1px solid #ffffff
