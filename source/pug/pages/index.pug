@@ -32,27 +32,34 @@ html(lang='en')
             form.order-form
               .order-form-head
                 i.fa.fa-bed
-                lable Hotel Name
+                lable BOOK NOW
               .order-form-body
                 .order-form-group
                   i.fa.fa-calendar-o
-                  lable Check In
-                  input.txt_input(type="text" placeholder="DD MM YYYY")
+                  lable CHECK IN
+                  input.order-form-group_input(type="date" placeholder="DD MM YYYY")
                 .order-form-group
                   i.fa.fa-calendar-o
-                  lable Check Out
-                  input.txt_input(type="text" placeholder="DD MM YYYY")
+                  lable CHECK OUT
+                  input.order-form-group_input(type="date" placeholder="DD MM YYYY")
                 .order-form-group
                   i.fa.fa-male
-                  lable Adults
-                  input.txt_input(type="number" value="1" name="Adults" min="1" max="6")
+                  lable ADULTS
+                  input.order-form-group_input(type="number" value="1" name="Adults" min="1" max="6")
                 .order-form-group
                   i.fa.fa-child
-                  lable Kids
-                  input.txt_input(type="number" value="0" name="Kids" min="0" max="6")
+                  lable KIDS
+                  input.order-form-group_input(type="number" value="0" name="Kids" min="0" max="6")
+                .order-form-group
+                  i.fa.fa-bed
+                  lable ROOM TYPE
+                  select.order-form-group_select
+                    option(value='single') single
+                    option(value='double') double
+                    option(value='deluxe') deluxe
                 .order-form-search-btn
                   i.fa.fa-search
-                  span Search Availability
+                  span.order-btn-margin Search Availability
 
 
 

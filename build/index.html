@@ -37,26 +37,34 @@
           <div class="order-container">
             <form class="order-form">
               <div class="order-form-head"><i class="fa fa-bed"></i>
-                <lable>Hotel Name</lable>
+                <lable>BOOK NOW</lable>
               </div>
               <div class="order-form-body">
                 <div class="order-form-group"><i class="fa fa-calendar-o"></i>
-                  <lable>Check In</lable>
-                  <input class="txt_input" type="text" placeholder="DD MM YYYY">
+                  <lable>CHECK IN</lable>
+                  <input class="order-form-group_input" type="date" placeholder="DD MM YYYY">
                 </div>
                 <div class="order-form-group"><i class="fa fa-calendar-o"></i>
-                  <lable>Check Out</lable>
-                  <input class="txt_input" type="text" placeholder="DD MM YYYY">
+                  <lable>CHECK OUT</lable>
+                  <input class="order-form-group_input" type="date" placeholder="DD MM YYYY">
                 </div>
                 <div class="order-form-group"><i class="fa fa-male"></i>
-                  <lable>Adults</lable>
-                  <input class="txt_input" type="number" value="1" name="Adults" min="1" max="6">
+                  <lable>ADULTS</lable>
+                  <input class="order-form-group_input" type="number" value="1" name="Adults" min="1" max="6">
                 </div>
                 <div class="order-form-group"><i class="fa fa-child"></i>
-                  <lable>Kids</lable>
-                  <input class="txt_input" type="number" value="0" name="Kids" min="0" max="6">
+                  <lable>KIDS</lable>
+                  <input class="order-form-group_input" type="number" value="0" name="Kids" min="0" max="6">
                 </div>
-                <div class="order-form-search-btn"><i class="fa fa-search"></i><span>Search Availability</span></div>
+                <div class="order-form-group"><i class="fa fa-bed"></i>
+                  <lable>ROOM TYPE</lable>
+                  <select class="order-form-group_select">
+                    <option value="single">single</option>
+                    <option value="double">double</option>
+                    <option value="deluxe">deluxe</option>
+                  </select>
+                </div>
+                <div class="order-form-search-btn"><i class="fa fa-search"></i><span class="order-btn-margin">Search Availability</span></div>
               </div>
             </form>
           </div>
